@@ -76,7 +76,7 @@
         <td data-cell="H14" data-format="$ 0,0" data-formula="H13+H12">875444</td>
       </tr>
       <tr>
-        <td colspan="2" data-cell="E15" data-format="" data-formula="=IF(H5 &gt; 0,IF(E34 &gt; 16500,'Warning: Annual Contribution Over $16,500 Limit',' . '),' . ')"></td>
+        <td colspan="2" data-cell="E15" data-format="" data-formula="IF(H5 &gt; 0,IF(E34 &gt; 16500,'Warning: Annual Contribution Over $16,500 Limit',' . '),' . ')"></td>
         <td data-cell="F15"></td>
         <td></td>
         <td></td>
@@ -99,7 +99,9 @@
         <td>Payments Per Year</td>
         <td>
           <select data-cell="E18" data-format="" data-formula="">
-            <option>26</option>
+            <?php foreach ([12, 24, 26, 52, 13, 4, 2, 1] as $opt) : ?>
+              <option <?= 26 == $opt ? 'selected' : '' ?> value="<?= $opt ?>"><?= $opt ?></option>
+            <?php endforeach ?>
           </select>
         </td>
         <td></td>

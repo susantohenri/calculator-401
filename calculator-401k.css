@@ -127,7 +127,7 @@
   vertical-align: baseline;
 }
 
-#calculator-401k #calculator-401k-lower-left-table td {
+#calculator-401k #calculator-401k-lower-table td {
   text-align: center;
   padding: 3px;
 }
@@ -139,7 +139,7 @@
 #calculator-401k #calculator-401k-lower-left-table,
 #calculator-401k #calculator-401k-lower-right-table {
   border-collapse: collapse;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
 }
 
 #calculator-401k #calculator-401k-lower-left-table thead th,
@@ -167,12 +167,4 @@ table [data-cell^="F"] {
 table [data-cell^="J"],
 table [data-cell^="K"] {
   text-align: right;
-}
-
-[data-cell="H8"],
-[data-cell="H9"],
-[data-cell="H12"],
-[data-cell="H13"],
-table [data-cell^="G"] {
-  color: red;
 }
