@@ -1,5 +1,5 @@
 <div id="calculator-401k">
-  <table>
+  <table id="calculator-401k-upper-table">
     <thead>
       <tr>
         <th colspan="2">401(k) Plan Assumptions</th>
@@ -116,4 +116,39 @@
       </tr>
     </tbody>
   </table>
+
+  <br>
+  <table id="calculator-401k-middle-table">
+    <tr>
+      <td>graph goes here</td>
+      <td>
+
+        <table id="calculator-401k-middle-right-table">
+          <tr>
+            <td>Random Rates</td>
+            <td>
+              <select>
+                <option>Off</option>
+                <option>On</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Min</td>
+            <td>-4.00%</td>
+          </tr>
+          <tr>
+            <td>Max</td>
+            <td>10.00%</td>
+          </tr>
+          <tr>
+            <td>Average</td>
+            <td data-cell="H25">7.00%</td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
 </div>
