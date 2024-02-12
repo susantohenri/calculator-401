@@ -119,9 +119,27 @@
   background-color: #f3f0e4;
 }
 
+#calculator-401k #calculator-401k-lower-table {
+  width: 100%;
+}
+
+#calculator-401k #calculator-401k-lower-table td {
+  vertical-align: baseline;
+}
+
+#calculator-401k #calculator-401k-lower-left-table td {
+  text-align: center;
+  padding: 3px;
+}
+
+#calculator-401k #calculator-401k-lower-left-table td input {
+  width: 100%;
+}
+
 #calculator-401k #calculator-401k-lower-left-table,
 #calculator-401k #calculator-401k-lower-right-table {
   border-collapse: collapse;
+  font-size: 0.8rem;
 }
 
 #calculator-401k #calculator-401k-lower-left-table thead th,
@@ -133,4 +151,28 @@
 #calculator-401k #calculator-401k-lower-left-table tbody tr:first-child,
 #calculator-401k #calculator-401k-lower-right-table tbody tr:first-child {
   background-color: var(--cal-401k-table-left-bgcolor);
+}
+
+#calculator-401k #calculator-401k-lower-left-table tbody tr:has(> [data-cell^="B"]:empty),
+#calculator-401k #calculator-401k-lower-right-table tbody tr:has(> [data-cell^="K"]:empty) {
+  display: none;
+}
+
+table [data-cell^="E"],
+table [data-cell^="F"] {
+  text-align: right;
+  width: 5%;
+}
+
+table [data-cell^="J"],
+table [data-cell^="K"] {
+  text-align: right;
+}
+
+[data-cell="H8"],
+[data-cell="H9"],
+[data-cell="H12"],
+[data-cell="H13"],
+table [data-cell^="G"] {
+  color: red;
 }

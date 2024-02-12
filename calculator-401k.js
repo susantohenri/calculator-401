@@ -1,4 +1,4 @@
-const target = jQuery(`#mortgage_loan_payoff_calculator`)
+const target = jQuery(`#calculator-401k`)
 
 jQuery(document).ready(function () {
     target.calx()
