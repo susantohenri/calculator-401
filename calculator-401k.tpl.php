@@ -151,4 +151,79 @@
     </tr>
   </table>
 
+  <br>
+  <table id="calculator-401k-lower-table">
+    <tr>
+      <td>
+
+        <table id="calculator-401k-lower-left-table">
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Age</th>
+              <th>Rate</th>
+              <th>Salary</th>
+              <th>Annual Contribution</th>
+              <th>Employer Contribution</th>
+              <th>Interest</th>
+              <th>Balance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&nbsp;</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <?php for ($row = 34; $row <= 93; $row++) : ?>
+              <tr>
+                <td><?= $row ?></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            <?php endfor; ?>
+
+          </tbody>
+        </table>
+
+      </td>
+      <td></td>
+      <td>
+
+        <table id="calculator-401k-lower-right-table">
+          <thead>
+            <tr>
+              <th>My Contribution</th>
+              <th>Total Contribution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&nbsp;</td>
+              <td></td>
+            </tr>
+            <?php for ($row = 34; $row <= 93; $row++) : ?>
+            <tr>
+              <td>&nbsp;</td>
+              <td></td>
+            </tr>
+            <?php endfor ?>
+          </tbody>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
 </div>

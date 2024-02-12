@@ -112,8 +112,25 @@
 #calculator-401k #calculator-401k-middle-right-table select {
   width: 100%;
   text-align: right;
+  border: 0;
 }
 
 [data-cell="H25"] {
   background-color: #f3f0e4;
+}
+
+#calculator-401k #calculator-401k-lower-left-table,
+#calculator-401k #calculator-401k-lower-right-table {
+  border-collapse: collapse;
+}
+
+#calculator-401k #calculator-401k-lower-left-table thead th,
+#calculator-401k #calculator-401k-lower-right-table thead th {
+  background-color: #aac2e3;
+  border-bottom: 2px solid black;
+}
+
+#calculator-401k #calculator-401k-lower-left-table tbody tr:first-child,
+#calculator-401k #calculator-401k-lower-right-table tbody tr:first-child {
+  background-color: var(--cal-401k-table-left-bgcolor);
 }
