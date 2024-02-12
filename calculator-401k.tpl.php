@@ -122,7 +122,9 @@
   <br>
   <table id="calculator-401k-middle-table">
     <tr>
-      <td>graph goes here</td>
+      <td>
+        <canvas id="calculator-401k-chart"></canvas>
+      </td>
       <td>
 
         <table id="calculator-401k-middle-right-table">
