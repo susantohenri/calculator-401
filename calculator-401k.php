@@ -8,7 +8,7 @@ License: GPL2
 function calculator_401k()
 {
     ob_start();
-    wp_enqueue_style('calculator-401k', plugins_url('calculator-401k.css', __FILE__), '1.0.0');
+    wp_enqueue_style('calculator-401k', plugins_url('calculator-401k.css', __FILE__), [], '1.0.0');
 
     include(plugin_dir_path(__FILE__) . 'calculator-401k.tpl.php');
     echo do_shortcode('[calx]');
