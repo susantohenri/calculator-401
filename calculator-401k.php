@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: 40k Calculator
+Plugin Name: 401k Calculator
 Version: 1.0.0
 License: GPL2
 */
