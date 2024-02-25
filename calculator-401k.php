@@ -16,7 +16,7 @@ function calculator_401k()
     wp_register_script('chart', plugin_dir_url(__FILE__) . 'chart.umd.min.js');
     wp_enqueue_script('chart');
 
-    wp_enqueue_script('calculator-401k', plugins_url('calculator-401k.js', __FILE__), array('jquery', 'chart'), '1.0.0', true);
+    wp_enqueue_script('calculator-401k', plugins_url('calculator-401k.js', __FILE__), array('jquery', 'chart'), '1.0.1', true);
 
     return ob_get_clean();
 }
