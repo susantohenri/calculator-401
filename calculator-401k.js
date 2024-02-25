@@ -17,10 +17,12 @@ jQuery(document).ready(function () {
                 const last_my_contrib = jQuery(`[data-cell="J${last_row}"]`).html()
                 jQuery(`[data-cell="H12"]`).html(`$ ${last_my_contrib}`)
 
-                let empl_contrib = parseInt(jQuery(`[data-cell="H14"]`).html().replace(`$`, ``).replaceAll(`,`, ``))
-                empl_contrib -= parseInt(jQuery(`[data-cell="H12"]`).html().replace(`$`, ``).replaceAll(`,`, ``))
-                empl_contrib = empl_contrib.toLocaleString()
-                jQuery(`[data-cell="H13"]`).html(`$ ${empl_contrib}`)
+                let sum_empl_contrib = target.calx(`evaluate`, `SUM(F34:F${last_row})`)
+                sum_empl_contrib = sum_empl_contrib.toLocaleString().slice(0, -4)
+                jQuery(`[data-cell="H13"]`).html(`$ ${sum_empl_contrib}`)
+
+                const last_total_contrib = jQuery(`[data-cell="K${last_row}"]`).html()
+                jQuery(`[data-cell="H14"]`).html(`$ ${last_total_contrib}`)
 
                 const chart_ctx = document.getElementById(`calculator-401k-chart`).getContext('2d')
                 let absis = []
